@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --laranja-claro: #3f3f3f;
+}
+
+body { 
+    background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDRxanlmOXJqbzNhdjhsMHM4Zmt0eHcyM2h1YnB4em9kb2FzMWUwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H6yzZcjRymlWAxDICb/giphy.gif') no-repeat center center fixed;
+    background-size: cover;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #444444;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+section {
+    padding-bottom: 5rem;
+}
+
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 600;
+}
+.nav-link:hover {
+    color:#03ad28
+}
+.nav-link:active {
+    color:#03ad28
+
+}
+.inicio-fundo {
+    /* aula 3 */
+    background-image: url('file:///C:/Users/kawka/Downloads/AMDeNVIDIA%20(5).png');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: left;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+/* posicionamento para a imagem à direita */
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    position: absolute; /* Adiciona posicionamento absoluto */
+    top: 58%; /* Ajuste a posição vertical */
+    left: 25%; /* Ajuste a posição horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o botão */
+    align-content: center;
+}
+
+
+
+
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('') top right no-repeat,
+        url('') bottom left no-repeat;
+    background-size: 180px 180px;
+    /* Ajuste o tamanho conforme necessário */
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    /* Garante que o conteúdo fica acima das imagens do background */
+}
+
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+}
+p {
+    color:rgb(0, 0, 0);
+
+}
+#galeria {
+    background-color: #807e7e;
+    border-radius: 6px;
+}
+
+.fundo-galeria {
+    background: url('') bottom right no-repeat;
+    background-size: 180px 180px;
+    border-radius: 4px;
+}
+
+#contato {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+    /* Espaçamento interno para a seção de contato */
+
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 2rem;
+    /* Espaçamento interno dentro do formulário */
+    border-radius: 10px;
+    /* Borda arredondada para o formulário */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para destacar o formulário */
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: #CB6D43;
+    border: none;
+    font-weight: bold;
+}
+
+/* chama classe do bootstrap para modificar a cor */
+.form-control {
+    background-color: #F1EDEF;
+}
