@@ -13,17 +13,15 @@
 </head>
 
 <body>
-    <header class=" p-2">
-
+    <header class="p-2">
         <nav class="container d-flex justify-content-between align-items-center">
-            <img src="img/Sem nome (90 x 40 px).png" alt="Logotipo da Tropicália" class="nav-img " loading="lazy">
+            <img src="img/Sem nome (90 x 40 px).png" alt="Logotipo da Tropicália" class="nav-img" loading="lazy">
             <ul class="nav mt-0">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
             </ul>
         </nav>
-
     </header>
 
 
@@ -41,23 +39,51 @@
         </section>
 
         <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+            <div class=" d-flex justify-content-center mb-4">
+                <h2>O que diferencia os dois?</h2>
+            </div>
             <div class="container d-flex align-items-center ">
-                <div class="card">
-                    <div class="card-body">
-                        <h2>O que diferencia os dois?</h2>
-                        <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento cultural
-                            brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse movimento
-                            abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes
-                            plásticas, e
-                            teve como principal característica a mistura de elementos da cultura brasileira tradicional
-                            com
-                            influências estrangeiras, especialmente do rock e da música pop.</p>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>NVIDIA</h3>
+                                <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento
+                                    cultural
+                                    brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse
+                                    movimento
+                                    abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes
+                                    plásticas, e
+                                    teve como principal característica a mistura de elementos da cultura brasileira
+                                    tradicional
+                                    com
+                                    influências estrangeiras, especialmente do rock e da música pop.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>AMD</h3>
+                                <p class="p-2">A Tropicália, também conhecida como Tropicalismo, foi um movimento
+                                    cultural
+                                    brasileiro que surgiu na década de 1960, tendo seu auge entre 1967 e 1968. Esse
+                                    movimento
+                                    abrangeu várias expressões artísticas, como a música, o cinema, o teatro e as artes
+                                    plásticas, e
+                                    teve como principal característica a mistura de elementos da cultura brasileira
+                                    tradicional
+                                    com
+                                    influências estrangeiras, especialmente do rock e da música pop.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="galeria">
+        <!-- <section id="galeria">
             <h2 class="text-center pt-5">Galeria</h2>
             <div class="container p-3 mt-3 fundo-galeria ">
 
@@ -72,11 +98,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="contato">
+        <!-- <section id="contato">
             <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
                     <h2 class="mb-3">Entre em contato</h2>
                     <form>
                         <div class="form-group mb-3">
@@ -101,7 +127,7 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <footer class="text-center p-3 fst-italic">
         <p>Acesse nossas redes:</p>
@@ -111,6 +137,11 @@
         <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        if (window.location.pathname === '/') {
+            window.location.href = 'index.html'
+        }
+    </script>
 
 </body>
 
