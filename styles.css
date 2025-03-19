@@ -5,7 +5,7 @@
     --laranja-claro: #3f3f3f;
 }
 
-body { 
+body {
     background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDRxanlmOXJqbzNhdjhsMHM4Zmt0eHcyM2h1YnB4em9kb2FzMWUwdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H6yzZcjRymlWAxDICb/giphy.gif') no-repeat center center fixed;
     background-size: cover;
     font-size: 1rem;
@@ -14,9 +14,9 @@ body {
 
 header {
     background-color: #444444;
-    position:fixed;
-    top:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
 }
@@ -31,16 +31,18 @@ section {
     color: #ffffff;
     font-weight: 600;
 }
-.nav-link:hover {
-    color:#03ad28
-}
-.nav-link:active {
-    color:#03ad28
 
+.nav-link:hover {
+    color: #03ad28
 }
+
+.nav-link:active {
+    color: #03ad28
+}
+
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('file:///C:/Users/kawka/Downloads/AMDeNVIDIA%20(5).png');
+    background-image: url('img/AMDeNVIDIA\ \(5\).png');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: left;
@@ -75,12 +77,16 @@ section {
     border: none;
     width: 14em;
     height: 3em;
-    position: absolute; /* Adiciona posicionamento absoluto */
-    top: 58%; /* Ajuste a posição vertical */
-    left: 25%; /* Ajuste a posição horizontal */
-    transform: translate(-50%, -50%); /* Centraliza o botão */
+    position: absolute;
+    /* Adiciona posicionamento absoluto */
+    top: 58%;
+    /* Ajuste a posição vertical */
+    left: 25%;
+    /* Ajuste a posição horizontal */
+    transform: translate(-50%, -50%);
+    /* Centraliza o botão */
     align-content: center;
-    
+
 }
 
 
@@ -118,10 +124,12 @@ h2 {
     font-style: normal;
     color: rgb(0, 0, 0);
 }
+
 p {
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
 
 }
+
 #galeria {
     background-color: #807e7e;
     border-radius: 6px;
