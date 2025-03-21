@@ -25,28 +25,131 @@
     </header>
 
 
-    <main class="container my-3">
+    <style>
+        /* Configuração geral */
+        .galeria {
+            position: relative;
+            text-align: center;
+            margin-top: 50px;
+        }
     
-        <div class="galeria">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container d-flex justify-content-center align-items-center p-3 mt-3 fundo-galeria">
-                <div class="row justify-content-center">
-                    <div class="col-md-4 mb-3">
-                        <img src="https://www.adrenaline.com.br/wp-content/uploads/2023/04/AMD-destaca-Radeons-com-mais-memoria-que-GeForces-e-custando-menos.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <img src="https://gameplayscassi.com.br/wp-content/uploads/2025/01/RTX-5090.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    
-                    <div class="col-md-11 mb-3">
-                        <img src="img/fundador-da-nvidia.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
+        /* Fundo cinza apenas atrás das 4 imagens */
+        .fundo-galeria {
+            background-color: #242424;
+            padding: 20px;
+            border-radius: 10px;
+            width: 600px; /* Tamanho aumentado */
+            height: 600px; /* Aumentado o tamanho do fundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            position: relative;
+        }
+    
+        /* Fundadores sem fundo cinza */
+        .fundador {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+    
+        /* Fundador da Nvidia à esquerda */
+        .fundador-esquerda {
+            left: -10%;
+        }
+    
+        /* Fundador da AMD à direita */
+        .fundador-direita {
+            right: -5%;
+        }
+    
+        /* Títulos com cor branca */
+        .fundador h4 {
+            color: white; /* Cor branca */
+        }
+    
+        /* Ajuste do tamanho dos fundadores para ficarem "de pé" */
+        .fundador img {
+            height: 550px; /* Aumentando a altura dos fundadores */
+            width: auto;
+        }
+    
+        /* Ajuste para as imagens dentro do fundo cinza */
+        .galeria-imagens {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+    
+        .galeria-imagens img {
+            width: 100%; /* Aumentando o tamanho das imagens dentro do fundo */
+            border-radius: 10px;
+        }
+    
+        /* Responsividade para telas menores */
+        @media (max-width: 992px) {
+            .fundo-galeria {
+                width: 150%;
+                height: auto;
+                padding: 15px;
+            }
+    
+            .fundador {
+                position: relative;
+                top: auto;
+                transform: none;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+            }
+    
+            .fundador img {
+                height: 300px; /* Reduz tamanho em telas menores */
+                width: auto;
+            }
+    
+            .fundador-esquerda, .fundador-direita {
+                text-align: center;
+                left: auto;
+                right: auto;
+            }
+        }
+    </style>
+    
+    <div class="galeria">
+        <h2 class="text-center">Galeria</h2>
+    
+        <!-- Fundadores sem fundo cinza -->
+        <div class="fundador fundador-esquerda">
+            <h4>ㅤㅤㅤㅤFundador da NVIDIA</h4>
+            <img src="img/acd1b84b-7f6e-4bb5-8b3e-1314f3f538ed.png" class="img-fluid" loading="lazy">
+        </div>
+    
+        <div class="fundador fundador-direita">
+            <h4>Fundador da AMD</h4>
+            <img src="img/11315456-5433-4310-92af-36efb35dd055.png" class="img-fluid" loading="lazy">
+        </div>
+    
+        <!-- Galeria dentro do fundo cinza -->
+        <div class="fundo-galeria">
+            <div class="galeria-imagens">
+                <img src="https://www.adrenaline.com.br/wp-content/uploads/2023/04/AMD-destaca-Radeons-com-mais-memoria-que-GeForces-e-custando-menos.jpg"
+                    class="img-fluid rounded-5" loading="lazy">
+                
+                <img src="https://gameplayscassi.com.br/wp-content/uploads/2025/01/RTX-5090.jpg"
+                    class="img-fluid rounded-5" loading="lazy">
+                
+                <img src="img/nvidia-acoes.jpg" class="img-fluid rounded-5" loading="lazy">
+                
+                <img src="img/processador-amd-1536x864-1.jpg" class="img-fluid rounded-5" loading="lazy">
             </div>
         </div>
-
+    </div>
+    
+    
+    
     </main>
     <footer class="text-center p-3 fst-italic">
         <p>Acesse nossas redes:</p>
