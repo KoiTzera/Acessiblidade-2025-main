@@ -157,6 +157,7 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Sombra suave para destacar o formulário */
     font-weight: bold;
+    
 }
 
 .formulario button {
@@ -167,7 +168,7 @@ p {
 
 /* chama classe do bootstrap para modificar a cor */
 .form-control {
-    background-color: #F1EDEF;
+    background-color: #ffffff;
 }
 
 .menu-acessibilidade{
@@ -177,9 +178,21 @@ p {
     z-index: 1000;
 }
 
+.alto-contraste .botao-inicio {
+    background-color: #FFF !important; /* Fundo branco */
+    color: #000 !important; /* Texto preto para contraste */
+    border: 2px solid #000; /* Adiciona uma borda preta para visibilidade */
+}
+
 .rotacao-botao{
     transform: rotate(-90deg);
     transform-origin: right center;
+}
+
+:root {
+    --alto-contraste-fundo: #ffffff; /* Fundo preto */
+    --alto-contraste-texto: #000000; /* Texto branco */
+    --alto-contraste-link: #000000; /* Amarelo para links e botões */
 }
 
 .opcoes-acessibilidade{
@@ -213,10 +226,21 @@ p {
 
 .alto-contraste .botao-inicio,
 .alto-contraste .formulario button,
-.alto-contraste .btn-primary{
+.alto-contraste .btn-primary {
     background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo)
+    color: #ffffff; /* Texto preto para garantir legibilidade */
 }
+
+.alto-contraste footer {
+    background-color: #FFF !important; /* Mantém o fundo branco */
+    color: #000 !important; /* Garante que o texto fique preto */
+}
+
+.alto-contraste footer p,
+.alto-contraste footer i {
+    color: #000 !important; /* Ícones e parágrafos ficam pretos */
+}
+
 
 footer {
     position: fixed;
